@@ -20,13 +20,12 @@ const lifes_images = [{"image": tinImage, "x": -80, "y": 350},
 											{"image": pinImage, "x": -25, "y": 390}];
 
 var displayGameImageObject = function (dt) {
-	//draw backgorund
 	ctx.fillStyle = backgroundPattern;
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	if(!isGameOver) {
-    for(let i = 0; i < players.length; i++){
-      let index = Math.ceil(i/3);
+    for(let i in players){
+      const index = Math.ceil(i/3);
       if(players[i].alive){
          informationBar(i);
       }

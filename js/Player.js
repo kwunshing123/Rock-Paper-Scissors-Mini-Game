@@ -77,16 +77,11 @@ function player(id, isAI){
 
 }
 
-var palyerNumber = {
-  "user": 0,
-  "AI": 0
-}
-
-function buildPlayers(amount, AIamount, status){
-  if(amount <= 2 && AIamount <= 3){
-    for(var i = 0; i < (amount + AIamount); i++){
+function buildPlayers(playerAmount, aiAmount, status){
+  if(playerAmount <= 2 && aiAmount <= 3){
+    for(let i = 0; i < (playerAmount + aiAmount); i++){
       var ai;
-      if(i >= amount){
+      if(i >= playerAmount){ 
         ai = true;
       }
       players[i] = new player(i, ai);
@@ -95,6 +90,4 @@ function buildPlayers(amount, AIamount, status){
   } else {
     return status("Maximun players number is two");
   }
-
-  return players;
 }

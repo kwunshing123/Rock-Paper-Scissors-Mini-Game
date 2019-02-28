@@ -33,7 +33,7 @@ var pointerImage = new Image();
 pointerImage.src = "img/pointer.png";
 
 const planes_loc = [{"x": 400, "y": 700}, {"x": 425, "y": 155},
-										{"x": 155, "y": 445}, {"x": 715, "y": 425}];
+					{"x": 155, "y": 445}, {"x": 715, "y": 425}];
 var players_plane = [];
 var players_flags = [];
 

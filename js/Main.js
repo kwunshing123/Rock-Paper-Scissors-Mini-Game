@@ -247,7 +247,7 @@ var reset = function(){
 	startChoice = false;
 	players = [];
 	flags = [];
-	for (var i = 0; i < 4; i++) {
+	for (let i = 0; i < 4; i++) {
 		players_plane[i].pos= [-100, -100];
 	}
 
